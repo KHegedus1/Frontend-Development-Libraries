@@ -231,7 +231,7 @@ const MyComponent = function() {
 
 
         const List = props => {
-          return <p></p>;
+          return <p>{props.tasks.join(", ")}</p>;
         };
         
         class ToDo extends React.Component {
@@ -253,4 +253,3 @@ const MyComponent = function() {
 
 
 
-        
