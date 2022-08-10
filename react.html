@@ -720,4 +720,17 @@ const MyComponent = function() {
         
         
 
+        class MyComponent extends React.Component {
+          constructor(props) {
+            super(props);
+          }
+          componentWillMount() {
+              console.log('Component being mounted');
+          }
+          render() {
+            return <div />
+          }
+        };
+        
+        
         
