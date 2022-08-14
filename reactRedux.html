@@ -149,7 +149,7 @@ const ADD = 'ADD';
 
   const Provider = ReactRedux.Provider;
 
-  class AppWrapper extends React.Component {
+  class AppWrapper extends React.Component { //AppWrapper !!
     render() {
       return (
         <Provider store={store}>
@@ -178,7 +178,7 @@ const ADD = 'ADD';
     }
   };
   
-  const mapDispatchToProps = (dispatch) => {
+  const mapDispatchToProps = (dispatch) => {  
       return {
           submitNewMessage: (message)=>{
               dispatch(addMessage(message))
@@ -188,4 +188,3 @@ const ADD = 'ADD';
 
 
 
-  
